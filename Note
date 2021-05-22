@@ -16,3 +16,9 @@ git reset --hard <版本号>
 git checkout --<加文件名>  将工作去的修改的文件返回成，版本控制的文件
 
 git reset HEAD <文件名>  将暂存去的文件，返回成工作区修改的文件
+
+git branch  查看分支信息
+
+git branch <分支名> 创建新的分支
+
+git checkout <分支名> 切换分支
