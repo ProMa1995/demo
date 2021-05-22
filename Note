@@ -4,3 +4,8 @@ git status  ：查看当前文件夹（仓库）的状态
 	·红色  新增的文件、修改了原文件  --> git add 文件名
 	·绿色  git 已经管理了该文件，但并没有生成版本  -->git commit -m "描述信息"
 	·生成版本之后，文件夹变成透明色（空）  git status  查看为空
+git log  查看版本的更迭 查看不到以前的版本更迭
+git relog  查看以前的版本更迭信息
+
+git reset --hard <版本号>
+
