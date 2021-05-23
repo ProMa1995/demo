@@ -26,3 +26,11 @@ git branch -d <分支名> 删除分支
 git meger <分支名> 合并分支  注意要切换到主分支，合并时注意冲突，冲突只能手动解决
 
 git checkout <分支名> 切换分支
+
+git remote -v  查看远程分支
+
+git remote  add origin <url>   添加远程分支  origin是远程分支的别名
+
+git remote rm <远程分支的别名>  
+
+git clone <url>  从git 上下载代码到本地仓库
