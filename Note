@@ -21,4 +21,8 @@ git branch  查看分支信息
 
 git branch <分支名> 创建新的分支
 
+git branch -d <分支名> 删除分支
+
+git meger <分支名> 合并分支  注意要切换到主分支，合并时注意冲突，冲突只能手动解决
+
 git checkout <分支名> 切换分支
