@@ -33,4 +33,7 @@ git remote  add origin <url>   添加远程分支  origin是远程分支的别�
 
 git remote rm <远程分支的别名>  
 
+git push -u origin 将代码push到远程分支
+
 git clone <url>  从git 上下载代码到本地仓库
+
