@@ -1,4 +1,14 @@
 git init  ：初始化git 本地仓库
+
+git config user.name <名字>    设置本地仓库的用户名
+
+git config user.email <邮箱>   设置本地仓库的邮箱地址
+
+git config --global user.name <名字>  设置全局的用户名
+
+git config --global user.email <邮箱> 设置全局邮箱
+
+
 git status  ：查看当前文件夹（仓库）的状态
 三个区域：
 	工作区（已被版本控制的文件，目前正在修改的，但未提交的文件）
@@ -8,10 +18,12 @@ git status  ：查看当前文件夹（仓库）的状态
 	·红色  新增的文件、修改了原文件  --> git add 文件名
 	·绿色  git 已经管理了该文件，但并没有生成版本  -->git commit -m "描述信息"
 	·生成版本之后，文件夹变成透明色（空）  git status  查看为空
-git log  查看版本的更迭 查看不到以前的版本更迭
-git relog  查看以前的版本更迭信息
 
-git reset --hard <版本号>
+git log  查看版本的更迭 查看不到以前的版本更迭 (通过reset 回滚的更迭)
+
+git reflog  查看以前的版本更迭信息
+
+git reset --hard <版本号>   回滚到之前的版本
 
 git checkout --<加文件名>  将工作去的修改的文件返回成，版本控制的文件
 
@@ -36,4 +48,11 @@ git remote rm <远程分支的别名>
 git push -u origin 将代码push到远程分支
 
 git clone <url>  从git 上下载代码到本地仓库
+
+git pull origin dev 将远程分支（master）的 dev 分支拉到 本地的工作区
+
+git pull origin dev相当于下面两条命令
+git fetch origin dev   +   git merger origin/dev
+
+
 
